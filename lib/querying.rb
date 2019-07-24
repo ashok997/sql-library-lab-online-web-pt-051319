@@ -11,12 +11,14 @@ def select_name_and_motto_of_char_with_longest_motto
   "SELECT name,motto 
   FROM Characters
   ORDER BY motto
-  Limit 1"
+  Limit 1";
 end
 
 
 def select_value_and_count_of_most_prolific_species
-  "SELECT species"
+  "SELECT COUNT(species)
+  FROM Characters
+  "
 end
 
 def select_name_and_series_subgenres_of_authors
