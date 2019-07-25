@@ -32,7 +32,7 @@ end
 
 def select_series_title_with_most_human_characters
   "SELECT Series.title
-  COUNT (id)
+  COUNT series.id
   FROM Characters
   INNER JOIN Series ON Characters.series_id = Series.id
   WHERE Characters.species = 'human'";
