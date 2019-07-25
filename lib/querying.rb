@@ -35,7 +35,7 @@ def select_series_title_with_most_human_characters
   FROM Characters
   INNER JOIN Series ON Characters.series_id = Series.id
   WHERE Characters.species = 'human'
-  GROUP BY Characters.series_id";
+  COUNT(Characters.series_id)";
   
 end
 
